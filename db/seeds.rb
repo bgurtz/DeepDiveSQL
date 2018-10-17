@@ -1,0 +1,20 @@
+
+vader = Author.create!(name: "Vader", country: "Mustafar")
+luke  = Author.create!(name: "Luke", country: "Tatooine")
+leia  = Author.create!(name: "Leia", country: "Alderaan")
+brian  = Author.create!(name: "Brian", country: "USA")
+
+fiction     = Genre.create!(name: "Fiction")
+non_fiction = Genre.create!(name: "Non-Fiction")
+biographies = Genre.create!(name: "Biographies")
+
+Book.create!(title: "The Force", genre_id: non_fiction.id, author_id: luke.id, sales: 500)
+Book.create!(title: "Britney Speares: An Anthology", genre_id: biographies.id, author_id: vader.id, sales: 950)
+Book.create!(title: "Only One Direction", genre_id: biographies.id, author_id: vader.id, sales: 45)
+Book.create!(title: "Ruby Noob", genre_id: non_fiction.id, author_id: vader.id, sales: 1200)
+Book.create!(title: "Rails Noob", genre_id: non_fiction.id, author_id: brian.id, sales: 1600)
+Book.create!(title: "Wax On", genre_id: non_fiction.id, author_id: brian.id, sales: 1100)
+Book.create!(title: "React Noob", genre_id: non_fiction.id, author_id: brian.id, sales: 100)
+Book.create!(title: "CSS Basics", genre_id: non_fiction.id, author_id: brian.id, sales: 300)
+Book.create!(title: "Wax Off", genre_id: non_fiction.id, author_id: brian.id, sales: 9500)
+Book.create!(title: "Toto Africa", genre_id: non_fiction.id, author_id: brian.id, sales: 1750)
